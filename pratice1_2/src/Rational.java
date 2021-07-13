@@ -1,10 +1,9 @@
 public class Rational {
-    private int numerator, deniminator;// 분자, 분모
-    private double fraction;
+    private final int numerator, deniminator;// 분자, 분모
+
     public Rational (int numerator, int deniminator){
         this.numerator = numerator; // 분자
         this.deniminator = deniminator; // 분모
-        fraction = (double)numerator / (double)deniminator;
     }
 
     public int getNumerator() {
@@ -13,10 +12,6 @@ public class Rational {
 
     public int getDeniminator() {
         return deniminator;
-    }
-
-    public double getFraction() {
-        return fraction;
     }
 
     private int gcd (int p ,int q){

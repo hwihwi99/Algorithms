@@ -23,6 +23,14 @@ public class FixedCapacityStackOfString {
            return arr[--top];
     }
 
+    public String peek(){
+        if(isEmpty()){
+            System.out.println("I am empty");
+            return "";
+        }
+        return arr[top-1];
+    }
+
     public boolean isEmpty(){
         return top == 0;
     }
