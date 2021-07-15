@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class _09 {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] input = br.readLine().split("");
@@ -16,6 +17,7 @@ public class _09 {
             }else{
                 queue.offer(s);
             }
+
         }
     }
 }
